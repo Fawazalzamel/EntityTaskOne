@@ -1,0 +1,14 @@
+﻿@model IEnumerable<Blog>
+
+<h2> Blogs </h2>
+
+<ul>
+
+    @foreach (var blog in Model)
+    {
+
+        <li>@blog.Id</li>
+        <li>@blog.Name</li>
+        <li>@blog.Url</li>
+    }
+</ul>
